@@ -532,6 +532,7 @@ public class FLETest extends ZKTestCase {
 
     @Test
     public void testElectionTimeUnit() throws Exception {
+        System.out.println(new File(".").getAbsolutePath());
         Assert.assertEquals("MS", QuorumPeer.FLE_TIME_UNIT);
     }
 }

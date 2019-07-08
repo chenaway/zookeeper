@@ -448,7 +448,7 @@ public class QuorumPeerMainTest extends QuorumPeerTestBase {
         WriterAppender appender = getConsoleAppender(os, Level.WARN);
         Logger qlogger = Logger.getLogger("org.apache.zookeeper.server.quorum");
         qlogger.addAppender(appender);
-
+        
         try {
             final int CLIENT_PORT_QP1 = PortAssignment.unique();
             final int CLIENT_PORT_QP2 = PortAssignment.unique();

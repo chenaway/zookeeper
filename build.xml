@@ -1984,6 +1984,8 @@ xmlns:cs="antlib:com.puppycrawl.tools.checkstyle.ant">
                    output="${build.dir.eclipse-test-classes}" />
            <source path="${bench.src.dir}"
                    output="${build.dir.eclipse-test-classes}" />
+           <source path="${src_version_generated.dir}"
+                   output="${build.dir.eclipse-main-classes}" />
 
            <output path="${build.dir.eclipse-main-classes}" />
            <library pathref="default.path.id" exported="true" />
